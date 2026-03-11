@@ -1,0 +1,3 @@
+/home/ciocco/Desktop/projects/compFis/nBody/build/CMakeFiles/anim.dir
+/home/ciocco/Desktop/projects/compFis/nBody/build/CMakeFiles/edit_cache.dir
+/home/ciocco/Desktop/projects/compFis/nBody/build/CMakeFiles/rebuild_cache.dir
