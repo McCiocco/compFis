@@ -1,13 +1,16 @@
-#include "galaxy.h"
+#include "params.h"
+#include "graphics.h"
 
 constexpr int ANTIAL = 8;
 const sf::Color background = sf::Color::Black;
 
 int main() {
 
-    Eigen::setNbThreads(1);
-    omp_set_num_threads(std::max(omp_get_max_threads() - 1, 1));
+    if (OMP_OK) {
 
+
+    
+    }
     sf::ContextSettings settings;
     settings.antialiasingLevel = ANTIAL;
     sf::RenderWindow window(sf::VideoMode(W, H), "N Body sim", sf::Style::Default, settings);
@@ -59,11 +62,11 @@ int main() {
         if (go) {
 
             for (int i = 0; i < updatesPerFrame; i++) s.verlet();
-    	    window.draw(fog);
+    	    // window.draw(fog);
 
         }
 
-        //window.clear(background);
+        window.clear(background);
 
         g.draw(window);
 
